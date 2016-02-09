@@ -8,8 +8,8 @@ This script uses the awesome creddump project to perform the decription, and is 
 To extract the hash datatable using in a way to minimize space used, run:
     esentutl.py /path/to/ntds.dit export -table datatable | grep -E "ATTk590689|ATTm3|ATTm590045|ATTr589970|ATTk589914|ATTk589879|ATTk589984|ATTk589918" > output
 
-Or run ./extract.sh (just wraps the syntax for esentutl.py):
-    ./extract.sh /path/to/ntds.dit
+Or run ./impdump_extract.sh (just wraps the syntax for esentutl.py):
+    ./impdump_extract.sh /path/to/ntds.dit
 
 
 Then, to extract all users hashes:
